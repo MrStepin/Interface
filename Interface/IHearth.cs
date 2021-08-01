@@ -9,7 +9,7 @@ namespace Interface
     public interface IHeart
     {
         void Connect();
-        (string,string) GetStatus();
+        string GetStatus();
 
         double HeartRate { get; set; }
     }

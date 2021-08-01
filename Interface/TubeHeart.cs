@@ -11,11 +11,11 @@ namespace Interface
         public double Price { get; set; }
         public double HeartRate { get; set; }
 
-        public (string, string) GetStatus()
+        public string GetStatus()
         {
             string statusOfHeart = Convert.ToString(Price);
             string heartRate = Convert.ToString(HeartRate);
-            return (statusOfHeart, heartRate);
+            return "Price: " + statusOfHeart + ", rate:" + heartRate;
         }
 
     public void Connect()

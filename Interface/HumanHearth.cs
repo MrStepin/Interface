@@ -11,11 +11,11 @@ namespace Interface
         public double HeartRate { get; set; }
         public string PreviousOwnerName { get; set; }
 
-        public (string, string) GetStatus()
+        public string GetStatus()
         {
             string statusOfHeart = PreviousOwnerName;
             string heartRate = Convert.ToString(HeartRate);
-            return (statusOfHeart, heartRate);
+            return "Previous owner: " + statusOfHeart + ", rate:" + heartRate;
         }
         public void Connect()
         {

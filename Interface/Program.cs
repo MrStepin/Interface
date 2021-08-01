@@ -20,7 +20,7 @@ namespace Interface
                 tubeHeart.Price = 10000.0;
                 tubeHeart.HeartRate = 60;
                 rockfeller.InstallHeart(tubeHeart);
-                Console.WriteLine($"Price and heart rate are:{tubeHeart.GetStatus()}");
+                Console.WriteLine(tubeHeart.GetStatus());
             }
             if (typeOfHeart == "Human")
             {
@@ -28,7 +28,7 @@ namespace Interface
                 humanHeart.PreviousOwnerName = "Valera";
                 humanHeart.HeartRate = 70;
                 rockfeller.InstallHeart(humanHeart);
-                Console.WriteLine($"Previous owner and heart rate are:{humanHeart.GetStatus()}");
+                Console.WriteLine(humanHeart.GetStatus());
 
             }
             if (typeOfHeart == "Plastic")
@@ -37,7 +37,7 @@ namespace Interface
                 plasticHeart.SerialNumber = 2343465;
                 plasticHeart.HeartRate = 65;
                 rockfeller.InstallHeart(plasticHeart);
-                Console.WriteLine($"Serial number and heart rate are:{plasticHeart.GetStatus()}");
+                Console.WriteLine(plasticHeart.GetStatus());
             }
 
             Console.ReadKey();

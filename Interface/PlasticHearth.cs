@@ -10,11 +10,11 @@ namespace Interface
     {
         public double HeartRate { get; set; }
         public int SerialNumber { get; set; }
-        public (string, string) GetStatus()
+        public string GetStatus()
         {
             string statusOfHeart = Convert.ToString(SerialNumber);
             string heartRate = Convert.ToString(HeartRate);
-            return (statusOfHeart, heartRate);
+            return "Serial number: " + statusOfHeart + ", rate:" + heartRate;
         }
         public void Connect()
         {
